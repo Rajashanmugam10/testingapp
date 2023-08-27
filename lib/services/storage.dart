@@ -11,4 +11,11 @@ TaskSnapshot snapshot=await uploadTask;
 String downloadUrl=await snapshot.ref.getDownloadURL();
 return downloadUrl; 
 }
+Future<String> uploadpostfile(String childname,Uint8List file)async{
+Reference ref =_storage.ref().child('publicpost').child(childname);
+UploadTask uploadTask=ref.putData(file);
+TaskSnapshot snapshot=await uploadTask;
+String downloadUrl=await snapshot.ref.getDownloadURL();
+return downloadUrl; 
+}
 }

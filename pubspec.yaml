@@ -45,6 +45,8 @@ dependencies:
   image_picker: ^1.0.2
   lottie: ^2.6.0
   firebase_storage: ^11.2.6
+  uuid: ^3.0.7
+
   
   
   
